@@ -14,9 +14,10 @@
         <Container width="22" height="22" bkimage="file='icon.png' source='0,0,16,16' dest='5,4,21,20' " />
         <Text text="360安全卫士7.3" pos="22, 5, 200, 24" float="true" textcolor="#FF447AA1" font="0" />
       </HorizontalLayout>
-      <HorizontalLayout width="188" inset="0,1,0,0">
-        <Button text="{u}{a}求助{/a}{/u}" showhtml="true"/>
+      <HorizontalLayout width="214" inset="0,1,0,0">
+        <Button text="{u}{a}求助1{/a}{/u}" showhtml="true"/>
         <Button text="{u}{a}论坛{/a}{/u}" showhtml="true"/>
+        <Button name="reloadskin" maxwidth="26" maxheight="16" normalimage="file='reloadskin.png' source='52,0,78,17'" hotimage="file='reloadskin.png' source='26,0,52,17'" pushedimage="file='reloadskin.png' source='0,0,26,17'"/>
         <Button name="menubtn" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_menu.png' source='52,0,78,17'" hotimage="file='sys_dlg_menu.png' source='26,0,52,17'" pushedimage="file='sys_dlg_menu.png' source='0,0,26,17'"/>
         <Button name="minbtn" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_min.png' source='52,0,78,17'" hotimage="file='sys_dlg_min.png' source='26,0,52,17'" pushedimage="file='sys_dlg_min.png' source='0,0,26,17'"/>
         <Button name="maxbtn" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_max.png' source='52,0,78,17'" hotimage="file='sys_dlg_max.png' source='26,0,52,18'" pushedimage="file='sys_dlg_max.png' source='0,0,26,17'"/>
@@ -33,8 +34,8 @@
         <Option pos="310, 0, 375, 62" float="true" align="bottom" text="防盗号" textcolor="#FF386382" font="1" textpadding="0,40,0,2" foreimage="file='preventnumber.png' dest='10,5,50,45'" normalimage="toolbar_normal.png" hotimage="toolbar_hover.png" pushedimage="toolbar_pushed.png" selectedimage="toolbar_pushed.png" group="quickbar"/>
         <Option pos="385, 0, 450, 62" float="true" align="bottom" text="软件管家" textcolor="#FF386382" font="1" textpadding="0,40,0,2" foreimage="file='softwaremanager.png' dest='10,5,50,45'" normalimage="toolbar_normal.png" hotimage="toolbar_hover.png" pushedimage="toolbar_pushed.png" selectedimage="toolbar_pushed.png" group="quickbar"/>
       </HorizontalLayout>
-      <HorizontalLayout width="150" inset="0,5,1,0">
-        <Button bkimage="file='logo.png'"/>
+      <HorizontalLayout width="150" inset="5,5,0,0" bordersize="1" bordercolor="0x00FF0000">
+        <Button width="60" height="60" bkimage="file='logo@1x.png'"/>
       </HorizontalLayout>
     </HorizontalLayout>
     <HorizontalLayout height="5">

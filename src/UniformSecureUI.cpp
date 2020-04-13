@@ -12,6 +12,7 @@ public:
 	void OnFinalMessage(HWND /*hWnd*/) { delete this; };
 
 	void Init() {
+		m_pReloadskinBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("reloadskin")));
 		m_pCloseBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("closebtn")));
 		m_pMaxBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("maxbtn")));
 		m_pRestoreBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("restorebtn")));
@@ -35,6 +36,9 @@ public:
 				SendMessage(WM_SYSCOMMAND, SC_MAXIMIZE, 0); return; }
 			else if( msg.pSender == m_pRestoreBtn ) { 
 				SendMessage(WM_SYSCOMMAND, SC_RESTORE, 0); return; }
+			else if ( msg.pSender == m_pReloadskinBtn ) {
+				CPaintManagerUI::ReloadSkin(); return; 
+			}
 		}
 		else if(msg.sType==_T("selectchanged"))
 		{
@@ -233,6 +237,7 @@ public:
 	CPaintManagerUI m_pm;
 
 private:
+	CButtonUI* m_pReloadskinBtn;
 	CButtonUI* m_pCloseBtn;
 	CButtonUI* m_pMaxBtn;
 	CButtonUI* m_pRestoreBtn;
@@ -245,7 +250,11 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPSTR /*l
 {
 	CPaintManagerUI::SetInstance(hInstance);
 	CPaintManagerUI::SetResourcePath(CPaintManagerUI::GetInstancePath() + _T("skin"));
+#ifdef _DEBUG
+	CPaintManagerUI::SetResourcePath(CPaintManagerUI::GetResourcePath() + _T("USCRes"));
+#else
 	CPaintManagerUI::SetResourceZip(_T("360SafeRes.zip"));
+#endif
 
 	HRESULT Hr = ::CoInitialize(NULL);
 	if( FAILED(Hr) ) return 0;
