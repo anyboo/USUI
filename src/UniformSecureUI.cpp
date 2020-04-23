@@ -261,7 +261,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPSTR /*l
 
 	C360SafeFrameWnd* pFrame = new C360SafeFrameWnd();
 	if( pFrame == NULL ) return 0;
-	pFrame->Create(NULL, _T("瑞术统一安全客户端"), UI_WNDSTYLE_FRAME, 0L, 0, 0, 800, 572);
+	pFrame->Create(NULL, _T("瑞术统一安全客户端"), UI_WNDSTYLE_FRAME, 0L, 0, 0, 960, 710);
 	pFrame->CenterWindow();
 	::ShowWindow(*pFrame, SW_SHOW);
 
