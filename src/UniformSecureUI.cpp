@@ -14,8 +14,6 @@ public:
 	void Init() {
 		m_pReloadskinBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("reloadskin")));
 		m_pCloseBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("closebtn")));
-		m_pMaxBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("maxbtn")));
-		m_pRestoreBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("restorebtn")));
 		m_pMinBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("minbtn")));
 	}
 
@@ -32,10 +30,6 @@ public:
 			}
 			else if( msg.pSender == m_pMinBtn ) { 
 				SendMessage(WM_SYSCOMMAND, SC_MINIMIZE, 0); return; }
-			else if( msg.pSender == m_pMaxBtn ) { 
-				SendMessage(WM_SYSCOMMAND, SC_MAXIMIZE, 0); return; }
-			else if( msg.pSender == m_pRestoreBtn ) { 
-				SendMessage(WM_SYSCOMMAND, SC_RESTORE, 0); return; }
 			else if ( msg.pSender == m_pReloadskinBtn ) {
 				CPaintManagerUI::ReloadSkin(); return; 
 			}
@@ -118,22 +112,6 @@ public:
 
 		RECT rcClient;
 		::GetClientRect(*this, &rcClient);
-
-// 		if( !::IsZoomed(*this) ) {
-// 			RECT rcSizeBox = m_pm.GetSizeBox();
-// 			if( pt.y < rcClient.top + rcSizeBox.top ) {
-// 				if( pt.x < rcClient.left + rcSizeBox.left ) return HTTOPLEFT;
-// 				if( pt.x > rcClient.right - rcSizeBox.right ) return HTTOPRIGHT;
-// 				return HTTOP;
-// 			}
-// 			else if( pt.y > rcClient.bottom - rcSizeBox.bottom ) {
-// 				if( pt.x < rcClient.left + rcSizeBox.left ) return HTBOTTOMLEFT;
-// 				if( pt.x > rcClient.right - rcSizeBox.right ) return HTBOTTOMRIGHT;
-// 				return HTBOTTOM;
-// 			}
-// 			if( pt.x < rcClient.left + rcSizeBox.left ) return HTLEFT;
-// 			if( pt.x > rcClient.right - rcSizeBox.right ) return HTRIGHT;
-// 		}
 
 		RECT rcCaption = m_pm.GetCaptionRect();
 		if( pt.x >= rcClient.left + rcCaption.left && pt.x < rcClient.right - rcCaption.right \
