@@ -53,8 +53,11 @@
       <Control width="5"/>
       <HorizontalLayout bkcolor="#FFFFFFFF">
         <TabLayout name="switch">
-          <HorizontalLayout>
+          <!--<HorizontalLayout>
             <ComputerExamine visible="false" bordersize="5" bordercolor="#FF454545"/>
+          </HorizontalLayout>-->
+          <HorizontalLayout>
+            <KeyExamine />
           </HorizontalLayout>
           <HorizontalLayout  bordersize="3" bordercolor="#FFBF3EFF">
             <Text text="查杀木马" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
@@ -85,7 +88,7 @@
       <Text visible="false" bkcolor="#FFF4A460" text="{c #386382}主程序版本：7.3.0.2001{/c}" pos="0, 5, 200, 24" float="true" showhtml="true"/>
       <Text visible="false" bkcolor="#FFFF3E96" text="{c #386382}备用木马库：2010-9-28{/c}" pos="155, 5, 400, 24" float="true" showhtml="true"/>
       <Button visible="false" bkcolor="#FFC1FFC1" text="检查更新" textcolor="#FF337833" pos="305,5,360,18" float="true"/>
-      <Control bkimage="icon.png" pos="782,4,806,20" float="true"/>
+      <Control bkimage="icon.png" pos="782,2,806,26" float="true"/>
       <Text font="2" text="{c #999999}客户端版本:  v1.0.0.1{/c}" pos="814, 5, 960, 36" float="true" showhtml="true"/>
     </HorizontalLayout>
     <HorizontalLayout visible="false" bordersize="1" bordercolor="#FFCD3333" float="true" pos="1,96,799,122">
