@@ -14,12 +14,12 @@
           <Label width="180" height="56" bkimage="file='logo.png'"/>
         </HorizontalLayout>
         <HorizontalLayout width="630" inset="6,5,0,0">
-          <Option pos="40, 0, 100, 62" float="true" align="bottom" name="common" text="主页" textcolor="#FFFFFFFF" font="1" textpadding="0,40,0,-10" normalimage="file='home.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='home.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='home.png' source='80,0,120,40' dest='10,5,50,45'" group="quickbar" selected="true"/>
-          <Option pos="140, 0, 200, 62" float="true" align="bottom" text="我的证书" textcolor="#FFE5E5E5" font="1" textpadding="0,40,0,-10" normalimage="file='cert.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='cert.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='cert.png' source='80,0,120,40' dest='10,5,50,45'" selectedimage="" group="quickbar"/>
-          <Option pos="240, 0, 300, 62" float="true" align="bottom" text="介质盖章" textcolor="#FFFFFFFF" font="1" textpadding="0,40,0,-10" normalimage="file='stamper.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='stamper.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='stamper.png' source='80,0,120,40' dest='10,5,50,45'" selectedimage="" group="quickbar"/>
-          <Option pos="340, 0, 400, 62" float="true" align="bottom" text="下载专区" textcolor="#FFFFFFFF" font="1" textpadding="0,40,0,-10" normalimage="file='download.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='download.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='download.png' source=80,0,120,40' dest='10,5,50,45'" selectedimage="" group="quickbar"/>
-          <Option pos="440, 0, 500, 62" float="true" align="bottom" text="软件升级" textcolor="#FFFFFFFF" font="1" textpadding="0,40,0,-10" normalimage="file='upgrade.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='upgrade.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='upgrade.png' source='80,0,120,40' dest='10,5,50,45'" selectedimage="" group="quickbar"/>
-          <Option pos="540, 0, 600, 62" float="true" align="bottom" text="帮助中心" textcolor="#FFFFFFFF" font="1" textpadding="0,40,0,-10" normalimage="file='help.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='help.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='help.png' source='80,0,120,40' dest='10,5,50,45'" selectedimage="" group="quickbar"/>
+          <Option pos="40, 0, 100, 62" float="true" align="bottom" name="home" text="主页" textcolor="#FFFFFFFF" font="1" textpadding="0,40,0,-10" normalimage="file='home.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='home.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='home.png' source='80,0,120,40' dest='10,5,50,45'" group="quickbar" selected="true"/>
+          <Option pos="140, 0, 200, 62" float="true" align="bottom" name="cert" text="我的证书" textcolor="#FFE5E5E5" font="1" textpadding="0,40,0,-10" normalimage="file='cert.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='cert.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='cert.png' source='80,0,120,40' dest='10,5,50,45'" selectedimage="" group="quickbar"/>
+          <Option pos="240, 0, 300, 62" float="true" align="bottom" name="stamper" text="介质盖章" textcolor="#FFFFFFFF" font="1" textpadding="0,40,0,-10" normalimage="file='stamper.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='stamper.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='stamper.png' source='80,0,120,40' dest='10,5,50,45'" selectedimage="" group="quickbar"/>
+          <Option pos="340, 0, 400, 62" float="true" align="bottom" name="download" text="下载专区" textcolor="#FFFFFFFF" font="1" textpadding="0,40,0,-10" normalimage="file='download.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='download.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='download.png' source=80,0,120,40' dest='10,5,50,45'" selectedimage="" group="quickbar"/>
+          <Option pos="440, 0, 500, 62" float="true" align="bottom" name="upgrade" text="软件升级" textcolor="#FFFFFFFF" font="1" textpadding="0,40,0,-10" normalimage="file='upgrade.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='upgrade.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='upgrade.png' source='80,0,120,40' dest='10,5,50,45'" selectedimage="" group="quickbar"/>
+          <Option pos="540, 0, 600, 62" float="true" align="bottom" name="help" text="帮助中心" textcolor="#FFFFFFFF" font="1" textpadding="0,40,0,-10" normalimage="file='help.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='help.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='help.png' source='80,0,120,40' dest='10,5,50,45'" selectedimage="" group="quickbar"/>
         </HorizontalLayout>
         <HorizontalLayout inset="6,0,0,0">
           <Button pos="18,0,36,18" float="true" name="settingbtn" maxwidth="18" maxheight="18" normalimage="file='sys_dlg_setting.png' source='36,0,54,18'" hotimage="file='sys_dlg_setting.png' source='18,0,36,18'" pushedimage="file='sys_dlg_setting.png' source='0,0,18,18'"/>
@@ -35,25 +35,19 @@
             <KeyExamine />
           </HorizontalLayout>
           <HorizontalLayout  bordersize="3" bordercolor="#FFBF3EFF">
-            <Text text="查杀木马" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
+            <Text text="我的证书" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
           </HorizontalLayout>
           <HorizontalLayout>
-            <Text text="清理插件" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
+            <Text text="介质盖章" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
           </HorizontalLayout>
           <HorizontalLayout>
-            <Text text="修复漏洞" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
+            <Text text="下载专区" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
           </HorizontalLayout>
           <HorizontalLayout>
-            <Text text="清理垃圾" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
+            <Text text="软件升级" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
           </HorizontalLayout>
           <HorizontalLayout>
-            <Text text="清理痕迹" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
-          </HorizontalLayout>
-          <HorizontalLayout>
-            <Text text="系统修复" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
-          </HorizontalLayout>
-          <HorizontalLayout>
-            <Text text="高级工具" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
+            <Text text="帮助中心" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
           </HorizontalLayout>
         </TabLayout>
       </HorizontalLayout>
@@ -62,16 +56,6 @@
     <HorizontalLayout height="36" bordercolor="#FFF9F9F9" bordersize="1" bkcolor="#F0E8E8E8">
       <Control bkimage="icon.png" pos="782,2,806,26" float="true"/>
       <Text font="2" text="{c #999999}客户端版本:  v1.0.0.1{/c}" pos="814, 5, 960, 36" float="true" showhtml="true"/>
-    </HorizontalLayout>
-    <HorizontalLayout visible="false" bordersize="1" bordercolor="#FFCD3333" float="true" pos="1,96,799,122">
-      <Option pos="6, 0, 84, 26" float="true" text="电脑体检" name="examine" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab" selected="true"/>
-      <Option pos="86, 0, 164, 26" float="true" text="查杀木马" name="trojan" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
-      <Option pos="166, 0, 244, 26" float="true" text="清理插件" name="plugins" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
-      <Option pos="246, 0, 324, 26" float="true" text="修复漏洞" name="vulnerability" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
-      <Option pos="326, 0, 404, 26" float="true" text="清理垃圾" name="rubbish" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
-      <Option pos="406, 0, 484, 26" float="true" text="清理痕迹" name="cleanup" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
-      <Option pos="486, 0, 564, 26" float="true" text="系统修复" name="fix" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
-      <Option pos="566, 0, 644, 26" float="true" text="高级工具" name="tool" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
     </HorizontalLayout>
   </VerticalLayout>
 </Window>
