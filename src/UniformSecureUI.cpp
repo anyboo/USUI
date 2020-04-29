@@ -12,7 +12,7 @@ public:
 	void OnFinalMessage(HWND /*hWnd*/) { delete this; };
 
 	void Init() {
-		m_pReloadskinBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("reloadskin")));
+		m_pSettingBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("settingbtn")));
 		m_pCloseBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("closebtn")));
 		m_pMinBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("minbtn")));
 	}
@@ -30,7 +30,7 @@ public:
 			}
 			else if( msg.pSender == m_pMinBtn ) { 
 				SendMessage(WM_SYSCOMMAND, SC_MINIMIZE, 0); return; }
-			else if ( msg.pSender == m_pReloadskinBtn ) {
+			else if ( msg.pSender == m_pSettingBtn) {
 				CPaintManagerUI::ReloadSkin(); return; 
 			}
 		}
@@ -215,10 +215,8 @@ public:
 	CPaintManagerUI m_pm;
 
 private:
-	CButtonUI* m_pReloadskinBtn;
+	CButtonUI* m_pSettingBtn;
 	CButtonUI* m_pCloseBtn;
-	CButtonUI* m_pMaxBtn;
-	CButtonUI* m_pRestoreBtn;
 	CButtonUI* m_pMinBtn;
 	//...
 };
