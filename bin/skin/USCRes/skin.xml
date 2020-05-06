@@ -1,96 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Window size="800,572" sizebox="4,4,6,6" roundcorner="5,5" caption="0,0,0,90" mininfo="800,570">
-  <Font id="0" name="宋体" size="13" bold="true" />
-  <Font id="1" name="宋体" size="12" bold="true" />
-  <Font id="2" name="宋体" size="12" />
-  <Font id="3" name="宋体" size="14" bold="true" />
-  <Font id="4" name="宋体" size="22" bold="true" italic="true"/>
-  <Font id="5" name="宋体" size="12" />
+<Window size="960,710" sizebox="4,4,6,6" roundcorner="5,5" caption="0,0,0,90" mininfo="960,708">
+  <Font id="0" name="微软雅黑" size="13" bold="true" />
+  <Font id="1" name="微软雅黑" size="14" bold="false" />
+  <Font id="2" name="微软雅黑" size="12" />
+  <Font id="3" name="微软雅黑" size="14" bold="true" />
+  <Font id="4" name="微软雅黑" size="22" bold="true" italic="true"/>
+  <Font id="5" name="微软雅黑" size="20" />
+  <Font id="6" name="微软雅黑" size="16" />
   <Default name="VScrollBar" value="button1normalimage=&quot;file='scrollbar.bmp' source='0,90,16,106' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='scrollbar.bmp' source='18,90,34,106' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scrollbar.bmp' source='36,90,52,106' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scrollbar.bmp' source='54,90,70,106' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scrollbar.bmp' source='0,108,16,124' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scrollbar.bmp' source='18,108,34,124' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scrollbar.bmp' source='36,108,52,124' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scrollbar.bmp' source='54,108,70,124' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scrollbar.bmp' source='0,126,16,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scrollbar.bmp' source='18,126,34,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='scrollbar.bmp' source='36,126,52,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scrollbar.bmp' source='54,126,70,142' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scrollbar.bmp' source='0,144,16,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scrollbar.bmp' source='18,144,34,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scrollbar.bmp' source='36,144,52,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scrollbar.bmp' source='54,144,70,160' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scrollbar.bmp' source='0,162,16,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scrollbar.bmp' source='18,162,34,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scrollbar.bmp' source='36,162,52,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scrollbar.bmp' source='54,162,70,178' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
   <Default name="HScrollBar" value="button1normalimage=&quot;file='scrollbar.bmp' source='0,0,16,16' mask='#FFFF00FF'&quot; button1hotimage=&quot;file='scrollbar.bmp' source='18,0,34,16' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scrollbar.bmp' source='36,0,52,16' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scrollbar.bmp' source='54,0,70,16' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scrollbar.bmp' source='0,18,16,34' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scrollbar.bmp' source='18,18,34,34' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scrollbar.bmp' source='36,18,52,34' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scrollbar.bmp' source='54,18,70,34' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scrollbar.bmp' source='0,36,16,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scrollbar.bmp' source='18,36,34,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;file='scrollbar.bmp' source='36,36,52,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scrollbar.bmp' source='54,36,70,52' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scrollbar.bmp' source='0,54,16,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scrollbar.bmp' source='18,54,34,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scrollbar.bmp' source='36,54,52,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scrollbar.bmp' source='54,54,70,70' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scrollbar.bmp' source='0,72,16,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scrollbar.bmp' source='18,72,34,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scrollbar.bmp' source='36,72,52,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scrollbar.bmp' source='54,72,70,88' corner='2,2,2,2' mask='#FFFF00FF'&quot; " />
-  <VerticalLayout bkcolor="#FFD1E8F5" bkcolor2="#FFC6E0F1" bordercolor="#FF768D9B" bordersize="1" borderround="5,5" inset="1,0,1,0">
-    <HorizontalLayout height="24">
-      <HorizontalLayout>
-        <Container width="22" height="22" bkimage="file='icon.png' source='0,0,16,16' dest='5,4,21,20' " />
-        <Text text="360安全卫士7.3" pos="22, 5, 200, 24" float="true" textcolor="#FF447AA1" font="0" />
+  <VerticalLayout bkcolor="#F5FFFFFF" bkcolor2="#FEF9F9F9" bordersize="1" borderround="5,5" inset="1,0,1,0"> 
+      <HorizontalLayout inset="0,20,0,0" bkimage="bg.png" width="960" height="96">
+        <HorizontalLayout width="205" inset="23,0,0,0">
+          <Label width="180" height="56" bkimage="file='logo.png'"/>
+        </HorizontalLayout>
+        <HorizontalLayout width="630" inset="6,5,0,0">
+          <Option pos="40, 0, 100, 62" float="true" align="bottom" name="home" text="主页" textcolor="#FFFFFFFF" font="1" textpadding="0,40,0,-10" normalimage="file='home.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='home.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='home.png' source='80,0,120,40' dest='10,5,50,45'" selectedimage="file='home.png' source='80,0,120,40' dest='10,5,50,45'" group="quickbar" selected="true"/>
+          <Option pos="140, 0, 200, 62" float="true" align="bottom" name="cert" text="我的证书" textcolor="#FFE5E5E5" font="1" textpadding="0,40,0,-10" normalimage="file='cert.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='cert.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='cert.png' source='80,0,120,40' dest='10,5,50,45'" selectedimage="file='cert.png' source='80,0,120,40' dest='10,5,50,45'" group="quickbar"/>
+          <Option pos="240, 0, 300, 62" float="true" align="bottom" name="stamper" text="介质盖章" textcolor="#FFFFFFFF" font="1" textpadding="0,40,0,-10" normalimage="file='stamper.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='stamper.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='stamper.png' source='80,0,120,40' dest='10,5,50,45'" selectedimage="file='stamper.png' source='80,0,120,40' dest='10,5,50,45'" group="quickbar"/>
+          <Option pos="340, 0, 400, 62" float="true" align="bottom" name="download" text="下载专区" textcolor="#FFFFFFFF" font="1" textpadding="0,40,0,-10" normalimage="file='download.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='download.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='download.png' source='80,0,120,40' dest='10,5,50,45'" selectedimage="file='download.png' source='80,0,120,40' dest='10,5,50,45'" group="quickbar"/>
+          <Option pos="440, 0, 500, 62" float="true" align="bottom" name="upgrade" text="软件升级" textcolor="#FFFFFFFF" font="1" textpadding="0,40,0,-10" normalimage="file='upgrade.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='upgrade.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='upgrade.png' source='80,0,120,40' dest='10,5,50,45'" selectedimage="file='upgrade.png' source='80,0,120,40' dest='10,5,50,45'" group="quickbar"/>
+          <Option pos="540, 0, 600, 62" float="true" align="bottom" name="help" text="帮助中心" textcolor="#FFFFFFFF" font="1" textpadding="0,40,0,-10" normalimage="file='help.png' source='0,0,40,40' dest='10,5,50,45'" hotimage="file='help.png' source='40,0,80,40' dest='10,5,50,45'" pushedimage="file='help.png' source='80,0,120,40' dest='10,5,50,45'" selectedimage="file='help.png' source='80,0,120,40' dest='10,5,50,45'" group="quickbar"/>
+        </HorizontalLayout>
+        <HorizontalLayout inset="6,0,0,0">
+          <Button pos="18,0,36,18" float="true" name="settingbtn" maxwidth="18" maxheight="18" normalimage="file='sys_dlg_setting.png' source='36,0,54,18'" hotimage="file='sys_dlg_setting.png' source='18,0,36,18'" pushedimage="file='sys_dlg_setting.png' source='0,0,18,18'"/>
+          <Button pos="50,0,68,18" float="true" name="minbtn" maxwidth="18" maxheight="18" normalimage="file='sys_dlg_min2.png' source='36,0,54,18'" hotimage="file='sys_dlg_min2.png' source=18,0,36,18'" pushedimage="file='sys_dlg_min2.png' source='0,0,18,18'"/>
+          <Button pos="90,0,108,18"  float="true" name="closebtn" maxwidth="18" maxheight="18" normalimage="file='sys_dlg_close2.png' source='36,0,54,18'" hotimage="file='sys_dlg_close2.png' source='18,0,36,18'" pushedimage="file='sys_dlg_close2.png' source='0,0,18,18'"/>
+        </HorizontalLayout>
       </HorizontalLayout>
-      <HorizontalLayout width="188" inset="0,1,0,0">
-        <Button text="{u}{a}求助{/a}{/u}" showhtml="true"/>
-        <Button text="{u}{a}论坛{/a}{/u}" showhtml="true"/>
-        <Button name="menubtn" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_menu.png' source='52,0,78,17'" hotimage="file='sys_dlg_menu.png' source='26,0,52,17'" pushedimage="file='sys_dlg_menu.png' source='0,0,26,17'"/>
-        <Button name="minbtn" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_min.png' source='52,0,78,17'" hotimage="file='sys_dlg_min.png' source='26,0,52,17'" pushedimage="file='sys_dlg_min.png' source='0,0,26,17'"/>
-        <Button name="maxbtn" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_max.png' source='52,0,78,17'" hotimage="file='sys_dlg_max.png' source='26,0,52,18'" pushedimage="file='sys_dlg_max.png' source='0,0,26,17'"/>
-        <Button name="restorebtn" visible="false" maxwidth="26" maxheight="17" normalimage="file='sys_dlg_restore.png' source='52,0,78,17'" hotimage="file='sys_dlg_restore.png' source='26,0,52,17'" pushedimage="file='sys_dlg_restore.png' source='0,0,26,17'" />
-        <Button name="closebtn" maxwidth="45" maxheight="17" normalimage="file='sys_dlg_close.png' source='90,0,135,17'" hotimage="file='sys_dlg_close.png' source='45,0,90,17'" pushedimage="file='sys_dlg_close.png' source='0,0,45,17'"/>
-      </HorizontalLayout>
-    </HorizontalLayout>
-    <HorizontalLayout height="67">
-      <HorizontalLayout inset="8,5,0,0">
-        <Option pos="10, 0, 75, 62" float="true" align="bottom" name="common" text="常用" textcolor="#FF386382" font="1" textpadding="0,40,0,2" foreimage="file='commmon.png' dest='10,5,50,45'" normalimage="toolbar_normal.png" hotimage="toolbar_hover.png" pushedimage="toolbar_pushed.png" selectedimage="toolbar_pushed.png" group="quickbar" selected="true"/>
-        <Option pos="85, 0, 150, 62" float="true" align="bottom" text="木马防火墙" textcolor="#FF386382" font="1" textpadding="0,40,0,2" foreimage="file='firewall.png' dest='10,5,50,45'" normalimage="toolbar_normal.png" hotimage="toolbar_hover.png" pushedimage="toolbar_pushed.png" selectedimage="toolbar_pushed.png" group="quickbar"/>
-        <Option pos="160, 0, 225, 62" float="true" align="bottom" text="杀毒" textcolor="#FF386382" font="1" textpadding="0,40,0,2" foreimage="file='antivirus.png' dest='10,5,50,45'" normalimage="toolbar_normal.png" hotimage="toolbar_hover.png" pushedimage="toolbar_pushed.png" selectedimage="toolbar_pushed.png" group="quickbar"/>
-        <Option pos="235, 0, 300, 62" float="true" align="bottom" text="网盾" textcolor="#FF386382" font="1" textpadding="0,40,0,2" foreimage="file='networkshield.png' dest='10,5,50,45'" normalimage="toolbar_normal.png" hotimage="toolbar_hover.png" pushedimage="toolbar_pushed.png" selectedimage="toolbar_pushed.png" group="quickbar"/>
-        <Option pos="310, 0, 375, 62" float="true" align="bottom" text="防盗号" textcolor="#FF386382" font="1" textpadding="0,40,0,2" foreimage="file='preventnumber.png' dest='10,5,50,45'" normalimage="toolbar_normal.png" hotimage="toolbar_hover.png" pushedimage="toolbar_pushed.png" selectedimage="toolbar_pushed.png" group="quickbar"/>
-        <Option pos="385, 0, 450, 62" float="true" align="bottom" text="软件管家" textcolor="#FF386382" font="1" textpadding="0,40,0,2" foreimage="file='softwaremanager.png' dest='10,5,50,45'" normalimage="toolbar_normal.png" hotimage="toolbar_hover.png" pushedimage="toolbar_pushed.png" selectedimage="toolbar_pushed.png" group="quickbar"/>
-      </HorizontalLayout>
-      <HorizontalLayout width="150" inset="0,5,1,0">
-        <Button bkimage="file='logo.png'"/>
-      </HorizontalLayout>
-    </HorizontalLayout>
-    <HorizontalLayout height="5">
-      <Control width="1"/>
-      <HorizontalLayout bkcolor="#FF97C0DA" bkcolor2="#FFB8DFF2"></HorizontalLayout>
-      <Control width="1"/>
-    </HorizontalLayout>
-	<Control height="25" bkcolor="#FFB8DFF2"/>
     <HorizontalLayout>
       <Control width="5"/>
-      <HorizontalLayout bkcolor="#FFFFFFFF" bordercolor="#FF768D9B" bordersize="1">
+      <HorizontalLayout bkcolor="#FFFFFFFF">
         <TabLayout name="switch">
           <HorizontalLayout>
-            <ComputerExamine />
+            <MainFrame />
+          </HorizontalLayout>
+          <HorizontalLayout  bordersize="3" bordercolor="#FFBF3EFF">
+            <MyCert />
           </HorizontalLayout>
           <HorizontalLayout>
-            <Text text="查杀木马" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
+            <Text text="介质盖章" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
           </HorizontalLayout>
           <HorizontalLayout>
-            <Text text="清理插件" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
+            <Download />
           </HorizontalLayout>
           <HorizontalLayout>
-            <Text text="修复漏洞" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
+            <Upgrade />
           </HorizontalLayout>
           <HorizontalLayout>
-            <Text text="清理垃圾" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
-          </HorizontalLayout>
-          <HorizontalLayout>
-            <Text text="清理痕迹" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
-          </HorizontalLayout>
-          <HorizontalLayout>
-            <Text text="系统修复" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
-          </HorizontalLayout>
-          <HorizontalLayout>
-            <Text text="高级工具" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
+            <Text text="帮助中心" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" />
           </HorizontalLayout>
         </TabLayout>
       </HorizontalLayout>
       <Control width="5"/>
     </HorizontalLayout>
-    <HorizontalLayout height="24">
-      <Text text="{c #386382}主程序版本：7.3.0.2001{/c}" pos="0, 5, 200, 24" float="true" showhtml="true"/>
-      <Text text="{c #386382}备用木马库：2010-9-28{/c}" pos="155, 5, 400, 24" float="true" showhtml="true"/>
-      <Button text="检查更新" textcolor="#FF337833" pos="305,5,360,18" float="true"/>
-      <Control bkimage="cloud.png" pos="550,4,566,20" float="true"/>
-      <Text text="{c #386382}已成功连接至360云安全中心{/c}" pos="570, 5, 800, 24" float="true" showhtml="true"/>
-    </HorizontalLayout>
-    <HorizontalLayout float="true" pos="1,96,799,122">
-      <Option pos="6, 0, 84, 26" float="true" text="电脑体检" name="examine" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab" selected="true"/>
-      <Option pos="86, 0, 164, 26" float="true" text="查杀木马" name="trojan" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
-      <Option pos="166, 0, 244, 26" float="true" text="清理插件" name="plugins" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
-      <Option pos="246, 0, 324, 26" float="true" text="修复漏洞" name="vulnerability" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
-      <Option pos="326, 0, 404, 26" float="true" text="清理垃圾" name="rubbish" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
-      <Option pos="406, 0, 484, 26" float="true" text="清理痕迹" name="cleanup" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
-      <Option pos="486, 0, 564, 26" float="true" text="系统修复" name="fix" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
-      <Option pos="566, 0, 644, 26" float="true" text="高级工具" name="tool" textcolor="#FF386382" font="2" normalimage="tabbar_normal.png" hotimage="tabbar_hover.png" pushedimage="tabbar_pushed.png" selectedimage="tabbar_pushed.png" group="contenttab"/>
+    <HorizontalLayout height="36" bordercolor="#FFF9F9F9" bordersize="1" bkcolor="#F0E8E8E8">
+      <Control bkimage="icon.png" pos="782,2,806,26" float="true"/>
+      <Text font="2" text="{c #999999}客户端版本:  v1.0.0.1{/c}" pos="814, 5, 960, 36" float="true" showhtml="true"/>
     </HorizontalLayout>
   </VerticalLayout>
 </Window>

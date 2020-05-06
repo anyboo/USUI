@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <HorizontalLayout>
+    <VerticalLayout>
+      <HorizontalLayout inset="20,4,20,0">
+        <Container pos="-150,-109,150,109" float="0.5,0.4,0.5,0.4" bkimage="file='welcome.png' source='0,0,288,218' dest='0,0,288,218' " />
+        <Text pos="-150,-16,150,16" float="0.5,0.65,0.5,0.65" text="{f 3}{p}{c #3A3D3F}欢迎使用瑞证通统一安全认证客户端系统！{/c}{/p}{/f}" showhtml="true"/>
+        <HorizontalLayout pos="270,430,710,516" float="true">
+          <Button font="1" text="无KEY环境检测" align="bottom" textcolor="#FFFFFFFF" normalimage="file='plugout.png' source='0,0,214,85'" hotimage="file='plugout.png' source='214,0,428,85'" pushedimage="file='plugout.png' source='428,0,642,85'" disabledimage="file='plugin.png' source='642,0,856,85'"/>
+          <Button font="1" text="插KEY环境检测" align="bottom" textcolor="#FFFFFFFF" normalimage="file='plugin.png' source='0,0,214,85'" hotimage="file='plugin.png' source='214,0,428,85'" pushedimage="file='plugin.png' source='428,0,642,85'" disabledimage="file='plugin.png' source='642,0,856,85'"/>
+        </HorizontalLayout>
+      </HorizontalLayout>
+    </VerticalLayout>
+  </HorizontalLayout>
+</Window>

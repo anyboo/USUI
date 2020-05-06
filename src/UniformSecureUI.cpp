@@ -12,9 +12,8 @@ public:
 	void OnFinalMessage(HWND /*hWnd*/) { delete this; };
 
 	void Init() {
+		m_pSettingBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("settingbtn")));
 		m_pCloseBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("closebtn")));
-		m_pMaxBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("maxbtn")));
-		m_pRestoreBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("restorebtn")));
 		m_pMinBtn = static_cast<CButtonUI*>(m_pm.FindControl(_T("minbtn")));
 	}
 
@@ -31,31 +30,26 @@ public:
 			}
 			else if( msg.pSender == m_pMinBtn ) { 
 				SendMessage(WM_SYSCOMMAND, SC_MINIMIZE, 0); return; }
-			else if( msg.pSender == m_pMaxBtn ) { 
-				SendMessage(WM_SYSCOMMAND, SC_MAXIMIZE, 0); return; }
-			else if( msg.pSender == m_pRestoreBtn ) { 
-				SendMessage(WM_SYSCOMMAND, SC_RESTORE, 0); return; }
+			else if ( msg.pSender == m_pSettingBtn) {
+				CPaintManagerUI::ReloadSkin(); return; 
+			}
 		}
 		else if(msg.sType==_T("selectchanged"))
 		{
 			CDuiString name = msg.pSender->GetName();
 			CTabLayoutUI* pControl = static_cast<CTabLayoutUI*>(m_pm.FindControl(_T("switch")));
-			if(name==_T("examine"))
+			if(name==_T("home"))
 				 pControl->SelectItem(0);
-			else if(name==_T("trojan"))
+			else if(name==_T("cert"))
 				 pControl->SelectItem(1);
-			else if(name==_T("plugins"))
+			else if(name==_T("stamper"))
 				pControl->SelectItem(2);
-			else if(name==_T("vulnerability"))
+			else if(name==_T("download"))
 				pControl->SelectItem(3);
-			else if(name==_T("rubbish"))
+			else if(name==_T("upgrade"))
 				pControl->SelectItem(4);
-			else if(name==_T("cleanup"))
+			else if(name==_T("help"))
 				pControl->SelectItem(5);
-			else if(name==_T("fix"))
-				pControl->SelectItem(6);
-			else if(name==_T("tool"))
-				pControl->SelectItem(7);
 		}
 	}
 
@@ -114,22 +108,6 @@ public:
 
 		RECT rcClient;
 		::GetClientRect(*this, &rcClient);
-
-// 		if( !::IsZoomed(*this) ) {
-// 			RECT rcSizeBox = m_pm.GetSizeBox();
-// 			if( pt.y < rcClient.top + rcSizeBox.top ) {
-// 				if( pt.x < rcClient.left + rcSizeBox.left ) return HTTOPLEFT;
-// 				if( pt.x > rcClient.right - rcSizeBox.right ) return HTTOPRIGHT;
-// 				return HTTOP;
-// 			}
-// 			else if( pt.y > rcClient.bottom - rcSizeBox.bottom ) {
-// 				if( pt.x < rcClient.left + rcSizeBox.left ) return HTBOTTOMLEFT;
-// 				if( pt.x > rcClient.right - rcSizeBox.right ) return HTBOTTOMRIGHT;
-// 				return HTBOTTOM;
-// 			}
-// 			if( pt.x < rcClient.left + rcSizeBox.left ) return HTLEFT;
-// 			if( pt.x > rcClient.right - rcSizeBox.right ) return HTRIGHT;
-// 		}
 
 		RECT rcCaption = m_pm.GetCaptionRect();
 		if( pt.x >= rcClient.left + rcCaption.left && pt.x < rcClient.right - rcCaption.right \
@@ -233,9 +211,8 @@ public:
 	CPaintManagerUI m_pm;
 
 private:
+	CButtonUI* m_pSettingBtn;
 	CButtonUI* m_pCloseBtn;
-	CButtonUI* m_pMaxBtn;
-	CButtonUI* m_pRestoreBtn;
 	CButtonUI* m_pMinBtn;
 	//...
 };
@@ -245,14 +222,18 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPSTR /*l
 {
 	CPaintManagerUI::SetInstance(hInstance);
 	CPaintManagerUI::SetResourcePath(CPaintManagerUI::GetInstancePath() + _T("skin"));
+#ifdef _DEBUG
+	CPaintManagerUI::SetResourcePath(CPaintManagerUI::GetResourcePath() + _T("USCRes"));
+#else
 	CPaintManagerUI::SetResourceZip(_T("360SafeRes.zip"));
+#endif
 
 	HRESULT Hr = ::CoInitialize(NULL);
 	if( FAILED(Hr) ) return 0;
 
 	C360SafeFrameWnd* pFrame = new C360SafeFrameWnd();
 	if( pFrame == NULL ) return 0;
-	pFrame->Create(NULL, _T("瑞术统一安全客户端"), UI_WNDSTYLE_FRAME, 0L, 0, 0, 800, 572);
+	pFrame->Create(NULL, _T("瑞术统一安全客户端"), UI_WNDSTYLE_FRAME, 0L, 0, 0, 960, 710);
 	pFrame->CenterWindow();
 	::ShowWindow(*pFrame, SW_SHOW);
 

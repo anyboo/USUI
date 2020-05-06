@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <HorizontalLayout>
+    <VerticalLayout>
+      <HorizontalLayout inset="70,24,20,0">
+        <VerticalLayout>
+          <HorizontalLayout height="108">
+            <Label  pos="0, 0, 60, 60" float="true" bkimage="file='update.png' source='0,0,57,57' dest='0,0,57,57'"></Label>
+            <VerticalLayout  pos="80, 0, 500, 120" float="true" inset="0,6,0,0">
+              <Text align="bottom" font="5" text="升级版本1.0.0.1" textcolor="#3A3D3F" />
+              <Text align="bottom" font="1" text="当前版本1.0.0.1" textcolor="#888888"/>
+            </VerticalLayout>
+            <Button pos="700, 12, 780, 44" float="true" bkcolor="#FF34A4F9" borderround="2,2" font="1" text="升级" textcolor="#FFFFFF" ></Button>
+          </HorizontalLayout>
+          <Control width="820" height="1" bkcolor="#FFE8E8E8"/>
+          <HorizontalLayout height="26"></HorizontalLayout>
+          <Text text="{f 6}{p}{c #3A3D3F}新版功能{/c}{/p}{n}{/f}{f 1}{c #888888}{p}1、优化我的证书申请模块。{/p}{p}2、新增证书注销功能{/p}{p}3、新增证书变更功能。{/p}{p}4、修复已知bug。{/p}{/c}{/f}" showhtml="true"/>
+        </VerticalLayout>
+      </HorizontalLayout>
+    </VerticalLayout>
+    <VerticalLayout visible="false" pos="-114,-101,114,101" float="0.5,0.5,0.5,0.5" bkimage="file='latest_version.png' source='0,0,228,202' dest='0,0,228,202'"></VerticalLayout>
+  </HorizontalLayout>
+</Window>
