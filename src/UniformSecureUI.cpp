@@ -225,7 +225,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPSTR /*l
 #ifdef _DEBUG
 	CPaintManagerUI::SetResourcePath(CPaintManagerUI::GetResourcePath() + _T("USCRes"));
 #else
-	CPaintManagerUI::SetResourceZip(_T("360SafeRes.zip"));
+	CPaintManagerUI::SetResourceZip(_T("USCRes.zip"));
 #endif
 
 	HRESULT Hr = ::CoInitialize(NULL);
